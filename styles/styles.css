@@ -1,0 +1,188 @@
+body {
+  padding: 0;
+  margin: 0;
+  background-color: skyblue;
+  font-family: 'Calibri';
+}
+
+body form {
+  margin: auto;
+  width: 50%;
+  height: 80%;
+  margin-top: 5%;
+  border-radius: 15px;
+  padding-bottom: 5%;
+  /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#1e5799+0,7db9e8+100 */
+  background: #1e5799;
+  /* Old browsers */
+  /* FF3.6-15 */
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(45deg, #1e5899 0%, #7dbae8 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e5799', endColorstr='#7db9e8',GradientType=1 );
+  /* IE6-9 fallback on horizontal gradient */
+}
+
+body form #top_part {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  height: 40px;
+  margin-right: 1.5%;
+  padding-top: 1%;
+}
+
+body form #top_part div a {
+  padding: 5px;
+  margin-right: 0;
+  border-radius: 50%;
+  color: #082858;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+body form #top_part div a:hover {
+  color: #fff;
+  text-shadow: 2px 2px 8px #000000;
+}
+
+body form #top_part .close {
+  margin-right: 0;
+}
+
+body form #middle_part {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 2%;
+}
+
+body form #middle_part img {
+  width: 100px;
+  height: auto;
+  margin-bottom: 40px;
+}
+
+body form #middle_part input {
+  padding: 5px;
+  border: none;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+body form #middle_part input::-webkit-input-placeholder {
+  color: #1e5799;
+  text-align: center;
+}
+
+body form #middle_part input:-ms-input-placeholder {
+  color: #1e5799;
+  text-align: center;
+}
+
+body form #middle_part input::-ms-input-placeholder {
+  color: #1e5799;
+  text-align: center;
+}
+
+body form #middle_part input::placeholder {
+  color: #1e5799;
+  text-align: center;
+}
+
+body form #middle_part input:focus {
+  outline: none;
+}
+
+body form #middle_part input.pass_field {
+  margin-bottom: 0;
+}
+
+body form #middle_part #forgot_pass_msg p a {
+  text-decoration: none;
+  color: #082858;
+}
+
+body form #middle_part #forgot_pass_msg p a:hover {
+  color: white;
+  text-decoration: underline;
+  text-shadow: 0 0 10px #1e5799;
+}
+
+body form #middle_part button {
+  padding: 10px 30px;
+  background-color: #17aa03;
+  color: #ffffff;
+  font-weight: bold;
+  border: none;
+  border-radius: 7px;
+}
+
+body form #middle_part button:hover {
+  background-color: #139601;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 850px) {
+  body form {
+    width: 80%;
+  }
+  body form #middle_part input {
+    border-radius: 4px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  body form button {
+    width: 179px;
+    border-radius: 4px !important;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  body form {
+    width: 90%;
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  body form {
+    width: 100%;
+    border-radius: 0;
+    margin-top: 0;
+    padding-top: 5%;
+    padding-bottom: 20%;
+  }
+  body form #top_part {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 850px) {
+  body {
+    background-color: #fff;
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  body {
+    background-color: white;
+  }
+  body form {
+    padding-top: 20%;
+    height: 100vh;
+  }
+}
+/*# sourceMappingURL=styles.css.map */

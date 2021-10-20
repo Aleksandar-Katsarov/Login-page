@@ -1,0 +1,176 @@
+body {
+    padding: 0;
+    margin: 0;
+    background-color: skyblue;
+    font-family: 'Calibri';
+
+    form {
+
+    margin:  auto;
+    width: 50%;
+    height: 80%;
+    //border: 3px solid red;
+    margin-top: 5%;
+    border-radius: 15px;
+    padding-bottom: 5%;
+
+
+
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#1e5799+0,7db9e8+100 */
+
+    background: #1e5799; /* Old browsers */
+    background: -moz-linear-gradient(45deg,  hsla(212,67%,36%,1) 0%, hsla(206,70%,70%,1) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(45deg,  hsla(212,67%,36%,1) 0%,hsla(206,70%,70%,1) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(45deg,  hsla(212,67%,36%,1) 0%,hsla(206,70%,70%,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e5799', endColorstr='#7db9e8',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+    
+    
+
+        #top_part{
+            display: flex;
+            justify-content: flex-end;
+            height: 40px;
+            margin-right: 1.5%;
+            padding-top: 1%;
+
+            div a {
+                //width: 20px;
+                padding: 5px;
+
+                margin-right: 0;
+                border-radius: 50%;
+                color: rgb(8, 40, 88);
+                text-decoration: none;
+                font-weight: 500;
+
+                &:hover{
+                    color: #fff;
+                    text-shadow: 2px 2px 8px #000000;
+                }
+            }
+
+            .close {
+                margin-right: 0;
+            }
+        }
+        #middle_part{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding-top: 2%;
+
+            img{
+                width: 100px;
+                height: auto;
+                margin-bottom: 40px;
+
+            }
+
+            input {
+                padding: 5px;
+                border: none;
+                border-radius: 5px;
+                margin-bottom: 20px;
+
+                &::placeholder{
+                    color: #1e5799;
+                    text-align: center;
+                }
+
+                &:focus {
+                    outline: none;
+                }
+
+                &.pass_field{
+                    margin-bottom: 0;
+                }
+            }
+            
+            #forgot_pass_msg p a {
+                text-decoration: none;
+                color: rgb(8, 40, 88);
+
+                &:hover{
+                    color: white;
+                    text-decoration: underline;
+                    text-shadow: 0 0 10px #1e5799;
+                }
+            }
+
+            button {
+                padding: 10px 30px;
+                background-color: #17aa03;
+                color: #ffffff;
+                font-weight: bold;
+                border: none;
+                border-radius: 7px;
+                &:hover{
+                    background-color: #139601;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+
+    @media only screen and (max-width: 850px) {
+        form {
+          width: 80%;
+
+          #middle_part input {
+            border-radius: 4px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+        }
+
+        button {
+            width: 179px;
+            border-radius: 4px !important;
+        }
+        }
+      }
+
+      @media only screen and (max-width: 600px) {
+
+            form {
+                width: 90%;
+
+                
+              }
+      }
+
+      @media only screen and (max-width: 550px) {
+        
+        form {
+            width: 100%;
+            border-radius: 0;
+            margin-top: 0;
+            padding-top: 5%;
+            padding-bottom: 20%;
+  
+            #top_part {
+                display: none;
+            }
+
+          }
+      }
+}
+
+
+@media only screen and (max-width: 850px) {
+    body {
+        background-color: #fff;
+    }
+}
+
+
+@media only screen and (max-width: 550px) {
+    body {
+        background-color: white;
+
+        form {
+            padding-top: 20%;
+            height: 100vh;
+        }
+    }
+}
